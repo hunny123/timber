@@ -1,13 +1,15 @@
-
+ 
 $(document).ready(function(){
+ 
  $(window).scroll(function() {
    if ($(document).scrollTop() > 10) {
       $("#nav1").css("padding-top", "5px");
-      
+      $("#nav1").css("background-color", "#3F1D0B");
 
    } else {
 
-     $("#nav1").css("padding-top", "40px");
+     $("#nav1").css("padding-top", "20px");
+      $("#nav1").css("background-color", "transparent");
  }
  });     
 // Instantiate the Bootstrap carousel
@@ -36,10 +38,23 @@ new WOW().init();
 $(".menu").click(function(){
   $(this).hide(10);
   $(".menu1").show(10);
+  $("#nav1").css("background-color", "#3F1D0B");
 }); 
    $(".menu1").click(function(){
   $(this).hide(10);
   $(".menu").show(10);
+ 
+   if ($(document).scrollTop() > 15) {
+      
+      $("#nav1").css("background-color", "#3F1D0B");
+
+   } else {
+
+     
+      $("#nav1").css("background-color", "transparent");
+ 
+ };   
+   
 });
    
      
