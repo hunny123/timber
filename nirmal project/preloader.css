@@ -1,9 +1,10 @@
 .body12{
  overflow:hidden !important;
- display:none;
+ 
 }
 .body123{
- overflow:visible!important;
+display:none;
+ 
 }
 #preloader {
     position: fixed;
